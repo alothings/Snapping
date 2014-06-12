@@ -41,6 +41,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 		setContentView(R.layout.activity_main);
 
 		ParseAnalytics.trackAppOpened(getIntent());
+		
 		ParseUser currentUser = ParseUser.getCurrentUser();
 		if( currentUser == null){
 			navigateToLogin();
@@ -106,6 +107,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 		// as you specify a parent activity in AndroidManifest.xml.
 		int itemId = item.getItemId();
 		if (itemId == R.id.action_logout) {
+			Log.d("TEST IN MENU", "action_logout");
 			ParseUser.logOut();
 			navigateToLogin();
 		}

@@ -37,8 +37,7 @@
             android:parentActivityName=".com.laajue.snapping.LoginActivity"
             android:screenOrientation="portrait" >
         </activity>      
-        
-       
+      
     </application>
 
 </manifest>
