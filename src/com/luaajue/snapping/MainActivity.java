@@ -3,18 +3,20 @@ package com.luaajue.snapping;
 import java.util.Locale;
 
 import android.app.ActionBar;
-import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v13.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends Activity implements ActionBar.TabListener {
+import com.parse.ParseAnalytics;
+
+public class MainActivity extends FragmentActivity implements ActionBar.TabListener {
 
 	/**
 	 * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -35,6 +37,8 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
+		ParseAnalytics.trackAppOpened(getIntent());
+		
 		Intent intent = new Intent(this, LoginActivity.class);
 		intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
@@ -49,8 +53,8 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
 		mSectionsPagerAdapter = new SectionsPagerAdapter(getFragmentManager());
 
 		// Set up the ViewPager with the sections adapter.
-		//mViewPager = (ViewPager) findViewById(R.id.pager);
-		//mViewPager.setAdapter(mSectionsPagerAdapter);
+		mViewPager = (ViewPager) findViewById(R.id.pager);
+		mViewPager.setAdapter(mSectionsPagerAdapter);
 
 		// When swiping between different sections, select the corresponding
 		// tab. We can also use ActionBar.Tab#select() to do this if we have
@@ -95,7 +99,7 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
 		return super.onOptionsItemSelected(item);
 	}
 
-	@Override
+	@Override//-------------------- - -- - -  - -- - - --THIS METHODS IS NOT PART OF THE CODE(?)
 	public void onTabSelected(ActionBar.Tab tab,
 			FragmentTransaction fragmentTransaction) {
 		// When the given tab is selected, switch to the corresponding page in
@@ -173,8 +177,6 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
 			return fragment;
 		}
 
-		public PlaceholderFragment() {
-		}
 
 		
 	}

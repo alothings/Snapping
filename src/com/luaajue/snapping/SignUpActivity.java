@@ -1,24 +1,57 @@
 package com.luaajue.snapping;
 
 import android.app.Activity;
-import android.app.ActionBar;
-import android.app.Fragment;
+import android.app.AlertDialog;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.os.Build;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class SignUpActivity extends Activity {
 
+	protected EditText mUsername;
+	protected EditText mPassword;
+	protected EditText mEmail;
+	protected Button mSignUpButton;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_sign_up);
 
+		mUsername = (EditText) findViewById(R.id.usernameField);
+		mPassword = (EditText) findViewById(R.id.passwordField);
+		mEmail = (EditText) findViewById(R.id.emailField);
+		mSignUpButton = (Button) findViewById(R.id.signupButton);
 		
+		mSignUpButton.setOnClickListener(new View.OnClickListener() {			
+			@Override
+			public void onClick(View v) {
+				String username = mUsername.getText().toString();
+				String password = mPassword.getText().toString();
+				String email = mEmail.getText().toString();
+				
+				username.trim(); //This gets rid of backspaces in the fields
+				password.trim();
+				email.trim();
+				
+				if (username.isEmpty() ||password.isEmpty() || email.isEmpty()){
+					//Dialog when any field is empty
+					AlertDialog.Builder builder = new AlertDialog.Builder(SignUpActivity.this);
+					builder.setMessage(R.string.signup_error_message)
+						.setTitle(R.string.signup_error_title)
+						.setPositiveButton(android.R.string.ok, null);
+					AlertDialog dialog = builder.create();
+					dialog.show();
+				}
+				else{
+					//TODO: create new user!
+				}
+				
+			}
+		});
 	}
 
 	@Override

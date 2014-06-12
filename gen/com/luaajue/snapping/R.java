@@ -28,8 +28,8 @@ public final class R {
         public static final int action_settings=0x7f080007;
         public static final int emailField=0x7f080005;
         public static final int loginButton=0x7f080002;
+        public static final int pager=0x7f080004;
         public static final int passwordField=0x7f080001;
-        public static final int section_label=0x7f080004;
         public static final int signUpText=0x7f080003;
         public static final int signupButton=0x7f080006;
         public static final int usernameField=0x7f080000;
@@ -53,6 +53,8 @@ public final class R {
         public static final int password_hint=0x7f050008;
         public static final int sign_up_button_label=0x7f05000d;
         public static final int sign_up_text=0x7f05000a;
+        public static final int signup_error_message=0x7f05000e;
+        public static final int signup_error_title=0x7f05000f;
         public static final int title_activity_login=0x7f050005;
         public static final int title_activity_sign_up=0x7f05000b;
         public static final int title_section1=0x7f050001;

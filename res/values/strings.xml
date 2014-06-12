@@ -15,5 +15,7 @@
     <string name="title_activity_sign_up">SignUpActivity</string>
     <string android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/string1" name="email_hint">Email</string>
     <string android:layout_height="wrap_content" android:id="@+id/string1" android:layout_width="wrap_content" name="sign_up_button_label">Sign Up</string>
+    <string name="signup_error_message">Please me sure you entered all your info!</string>
+    <string android:layout_height="wrap_content" android:id="@+id/string1" android:layout_width="wrap_content" name="signup_error_title">Oops!</string>
 
 </resources>
