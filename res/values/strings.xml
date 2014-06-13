@@ -18,6 +18,7 @@
     <string name="signup_error_title">Oops!</string>
     <string name="login_error_message">Please me sure you entered all your info!</string>
     <string name="login_error_title">Oops!</string>
+    <string name="error_title">We are sorry!</string>
     <string name="menu_logout_label">Logout</string>
     <string name="empty_inbox_label">No new messages</string>
     <string name="empty_friends_label">No new friend requests</string>
