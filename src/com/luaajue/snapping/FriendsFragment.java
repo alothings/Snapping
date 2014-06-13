@@ -54,8 +54,7 @@ public class FriendsFragment extends ListFragment{
 					int i = 0;
 					for (ParseUser user : mFriends){
 						usernames[i] = user.getUsername();
-						i++;
-						
+						i++;					
 					}
 					ArrayAdapter<String> adapter = new ArrayAdapter<String>(getListView().getContext(),
 							android.R.layout.simple_list_item_1,
@@ -70,11 +69,8 @@ public class FriendsFragment extends ListFragment{
 						.setPositiveButton(android.R.string.ok, null);
 					AlertDialog dialog = builder.create();
 					dialog.show();
-				}
-				
-				
+				}								
 			}
-		});
-		
+		});		
 	}
 }

@@ -6,7 +6,6 @@ import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
@@ -34,9 +33,7 @@ public class EditFriendsActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS); // ---- for progress bar
 		setContentView(R.layout.activity_edit_friends);
-
-		setupActionBar();
-		
+		setupActionBar();		
 		getListView().setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
 	}
 	
@@ -62,14 +59,12 @@ public class EditFriendsActivity extends ListActivity {
 					int i = 0;
 					for (ParseUser user : mUsers){
 						usernames[i] = user.getUsername();
-						i++;
-						
+						i++;						
 					}
 					ArrayAdapter<String> adapter = new ArrayAdapter<String>(EditFriendsActivity.this,
 							android.R.layout.simple_list_item_checked,
 							usernames);
-					setListAdapter(adapter);
-					
+					setListAdapter(adapter);					
 					addFriendCheckmarks();
 				}
 				else {
@@ -80,8 +75,7 @@ public class EditFriendsActivity extends ListActivity {
 						.setPositiveButton(android.R.string.ok, null);
 					AlertDialog dialog = builder.create();
 					dialog.show();
-				}
-				
+				}				
 			}
 		});
 	}
@@ -89,14 +83,6 @@ public class EditFriendsActivity extends ListActivity {
 	private void setupActionBar() {
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.edit_friends, menu);
-		return true;
 	}
 
 	@Override
@@ -115,22 +101,21 @@ public class EditFriendsActivity extends ListActivity {
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		super.onListItemClick(l, v, position, id);
 		
-		if (getListView().isItemChecked(position)){
-			//add friend
+		if (getListView().isItemChecked(position)){  //add friend
 			mFriendsRelation.add(mUsers.get(position));
-			mCurrentUser.saveInBackground(new SaveCallback() {
-				
-				@Override
-				public void done(ParseException e) {
-					if (e != null){
-						Log.e(TAG, e.getMessage());
-					}					
-				}
-			});
 		}
-		else{
-			//remove friend
+		else{  //remove friend
+			mFriendsRelation.remove(mUsers.get(position));
 		}
+		//saving relationship to back-end.
+		mCurrentUser.saveInBackground(new SaveCallback() {				
+			@Override
+			public void done(ParseException e) {
+				if (e != null){
+					Log.e(TAG, e.getMessage());
+				}					
+			}
+		});
 		
 	}
 	
