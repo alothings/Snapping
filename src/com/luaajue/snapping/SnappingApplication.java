@@ -3,7 +3,6 @@ package com.luaajue.snapping;
 import android.app.Application;
 
 import com.parse.Parse;
-import com.parse.ParseObject;
 
 public class SnappingApplication extends Application {
 	
