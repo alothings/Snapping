@@ -21,12 +21,12 @@ import com.parse.SaveCallback;
 
 public class EditFriendsActivity extends ListActivity {
 
-	public static final String TAG = EditFriendsActivity.class.getSimpleName();
-	
-	protected List<ParseUser> mUsers;
 	protected ParseRelation<ParseUser> mFriendsRelation;
 	protected ParseUser mCurrentUser;
 	
+	public static final String TAG = EditFriendsActivity.class.getSimpleName();
+	
+	protected List<ParseUser> mUsers;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +45,7 @@ public class EditFriendsActivity extends ListActivity {
 		mFriendsRelation = mCurrentUser.getRelation(ParseConstants.KEY_FRIENDS_RELATION);
 		
 		setProgressBarIndeterminateVisibility(true);
+		
 		ParseQuery<ParseUser> query = ParseUser.getQuery();
 		query.orderByAscending(ParseConstants.KEY_USERNAME);
 		query.setLimit(1000);
@@ -52,8 +53,9 @@ public class EditFriendsActivity extends ListActivity {
 			
 			@Override
 			public void done(List<ParseUser> users, ParseException e) {
-				if ( e == null){
-					setProgressBarIndeterminateVisibility(false);
+				setProgressBarIndeterminateVisibility(false);
+				
+				if ( e == null){ //success
 					mUsers = users;
 					String[] usernames = new String[mUsers.size()];
 					int i = 0;
