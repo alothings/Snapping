@@ -1,6 +1,8 @@
-package com.luaajue.snapping;
+package com.laajue.snapping;
 
 import java.util.Locale;
+
+import com.laajue.snapping.R;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;

@@ -1,4 +1,4 @@
-package com.luaajue.snapping;
+package com.laajue.snapping;
 
 import android.app.Application;
 

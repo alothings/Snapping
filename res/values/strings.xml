@@ -23,18 +23,27 @@
     <string name="empty_inbox_label">No new messages</string>
     <string name="empty_friends_label">No new friend requests</string>
     <string name="menu_edit_friends_label">Edit Friends</string>
-    <string name="title_activity_edit_friends">Edit Friends</string>    
+    <string name="title_activity_edit_friends">Edit Friends</string>
     <string name="menu_camera_label">Camera</string>
     <string name="error_external_storage">There was a problem accessing your devices\' storage.</string>
     <string name="vide_file_size_warning">The selected video must be less than 10 MB</string>
+
     <string-array name="camera_choices">
-        <item >Take Picture</item>
-        <item >Take Video</item>
-        <item >Choose Picture</item>
-        <item >Choose Video</item>
+        <item>Take Picture</item>
+        <item>Take Video</item>
+        <item>Choose Picture</item>
+        <item>Choose Video</item>
     </string-array>
+
     <string name="general_error">Sorry, there was an error!</string>
     <string name="error_opening_file">There was a problem with the selected file</string>
     <string name="error_file_size">The selected file is too large! Select a new file.</string>
+    <string name="title_activity_recipients">Choose Recipients</string>
+    <string name="empty_recipients_list_message">Choose some friends first</string>
+    <string name="menu_send_label">Send</string>
+    <string name="error_selecting_file">There was an error with the file selected. Please select a different file.</string>
+    <string name="error_selecting_file_title">We are sorry!</string>
+    <string name="success_message">Message sent!</string>
+    <string name="error_sending_message">There was an error sending your message. Please try again</string>
 
 </resources>

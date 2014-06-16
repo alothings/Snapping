@@ -1,4 +1,4 @@
-package com.luaajue.snapping;
+package com.laajue.snapping;
 
 import java.util.List;
 
@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 
+import com.laajue.snapping.R;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseQuery;
