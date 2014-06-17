@@ -29,6 +29,9 @@ import com.parse.ParseAnalytics;
 import com.parse.ParseUser;
 
 public class MainActivity extends FragmentActivity implements ActionBar.TabListener {
+	/* This app allows to add friends. send and receive pictures and videos, such that the messages
+	 * self-destruct after 10 seconds. Android has a method for timer
+	 * also deleting the messages from the backend*/
 
 	public static final String TAG = MainActivity.class.getSimpleName();
 	public static final int TAKE_PHOTO_REQUEST = 0;
