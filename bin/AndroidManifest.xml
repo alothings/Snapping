@@ -56,8 +56,17 @@
         <activity
             android:name="com.laajue.snapping.RecipientsActivity"
             android:label="@string/title_activity_recipients"
-            android:parentActivityName="com.laajue.snapping.MainActivity" 
+            android:parentActivityName="com.laajue.snapping.MainActivity"
             android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.laajue.snapping.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.laajue.snapping.ViewImageActivity"
+            android:label="@string/title_activity_view_image"
+            android:parentActivityName="com.laajue.snapping.MainActivity"
+            android:screenOrientation="portrait"  >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.laajue.snapping.MainActivity" />
