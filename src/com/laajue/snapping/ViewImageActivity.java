@@ -10,6 +10,7 @@ import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
 
+
 public class ViewImageActivity extends Activity {
 
 	@Override
