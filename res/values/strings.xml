@@ -9,8 +9,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="username_hint">Username</string>
     <string name="password_hint">Password</string>
-    <string name="login_button_label">Login</string>
-    <string name="sign_up_text">Sign Up!</string>
+    <string name="login_button_label">SIGN IN</string>
+    <string name="sign_up_text">Don\'t have an account? Sign Up!</string>
     <string name="title_activity_sign_up">Sign Up Activity</string>
     <string android:id="@+id/string1" name="email_hint" android:layout_width="wrap_content" android:layout_height="wrap_content">Email</string>
     <string android:id="@+id/string1" name="sign_up_button_label" android:layout_width="wrap_content" android:layout_height="wrap_content">Sign Up</string>
@@ -46,5 +46,8 @@
     <string name="success_message">Message sent!</string>
     <string name="error_sending_message">There was an error sending your message. Please try again</string>
     <string name="title_activity_view_image">Snapping</string>
+    <string name="subtitle">Share it with friends</string>
+    <string name="content_desc_background">Background</string>
+    <string name="cancel_button_label">CANCEL</string>
 
 </resources>

@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="background_green">#005500</color>
+    <color name="apptheme_color">#003300</color>
+    <color name="light_gray">#bbbbbb</color>
+    <color name="light_green_button">#99cc99</color>
+    <color name="pressed_green_button">#003300</color>
+    <color name="focused_green_button">#336633</color>
+    <color name="font_color">#233b11</color>
 </resources>
