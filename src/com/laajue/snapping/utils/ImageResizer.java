@@ -1,4 +1,4 @@
-package com.laajue.snapping;
+package com.laajue.snapping.utils;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

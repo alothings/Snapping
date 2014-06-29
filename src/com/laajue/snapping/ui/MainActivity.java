@@ -1,4 +1,4 @@
-package com.laajue.snapping;
+package com.laajue.snapping.ui;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -25,6 +25,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.laajue.snapping.R;
+import com.laajue.snapping.R.array;
+import com.laajue.snapping.R.id;
+import com.laajue.snapping.R.layout;
+import com.laajue.snapping.R.menu;
+import com.laajue.snapping.R.string;
+import com.laajue.snapping.adapters.SectionsPagerAdapter;
+import com.laajue.snapping.utils.ParseConstants;
 import com.parse.ParseAnalytics;
 import com.parse.ParseUser;
 

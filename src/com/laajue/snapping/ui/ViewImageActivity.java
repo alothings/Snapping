@@ -1,4 +1,4 @@
-package com.laajue.snapping;
+package com.laajue.snapping.ui;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -8,6 +8,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.widget.ImageView;
 
+import com.laajue.snapping.R;
+import com.laajue.snapping.R.id;
+import com.laajue.snapping.R.layout;
 import com.squareup.picasso.Picasso;
 
 

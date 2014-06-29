@@ -1,4 +1,4 @@
-package com.laajue.snapping;
+package com.laajue.snapping.ui;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -11,6 +11,10 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.laajue.snapping.R;
+import com.laajue.snapping.R.id;
+import com.laajue.snapping.R.layout;
+import com.laajue.snapping.R.string;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;

@@ -1,8 +1,12 @@
-package com.laajue.snapping;
+package com.laajue.snapping.adapters;
 
 import java.util.Locale;
 
 import com.laajue.snapping.R;
+import com.laajue.snapping.R.drawable;
+import com.laajue.snapping.R.string;
+import com.laajue.snapping.ui.FriendsFragment;
+import com.laajue.snapping.ui.InboxFragment;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;

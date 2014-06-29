@@ -1,4 +1,4 @@
-package com.laajue.snapping;
+package com.laajue.snapping.adapters;
 
 import java.util.List;
 
@@ -10,6 +10,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.laajue.snapping.R;
+import com.laajue.snapping.R.drawable;
+import com.laajue.snapping.R.id;
+import com.laajue.snapping.R.layout;
+import com.laajue.snapping.utils.ParseConstants;
 import com.parse.ParseObject;
 
 public class MessageAdapter extends ArrayAdapter<ParseObject>{

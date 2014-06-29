@@ -24,7 +24,7 @@
         android:label="@string/app_name"
         android:theme="@style/Theme.Snapping" >
         <activity
-            android:name="com.laajue.snapping.MainActivity"
+            android:name="com.laajue.snapping.ui.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -34,38 +34,38 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.laajue.snapping.LoginActivity"
+            android:name="com.laajue.snapping.ui.LoginActivity"
             android:label="@string/title_activity_login"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.laajue.snapping.SignUpActivity"
+            android:name="com.laajue.snapping.ui.SignUpActivity"
             android:label="@string/title_activity_sign_up"
-            android:parentActivityName="com.laajue.snapping.LoginActivity"
+            android:parentActivityName="com.laajue.snapping.ui.LoginActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.laajue.snapping.EditFriendsActivity"
+            android:name="com.laajue.snapping.ui.EditFriendsActivity"
             android:label="@string/title_activity_edit_friends"
-            android:parentActivityName="com.laajue.snapping.MainActivity"
+            android:parentActivityName= "com.laajue.snapping.ui.MainActivity"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.luaajue.snapping.MainActivity" />
         </activity>
         <activity
-            android:name="com.laajue.snapping.RecipientsActivity"
+            android:name="com.laajue.snapping.ui.RecipientsActivity"
             android:label="@string/title_activity_recipients"
-            android:parentActivityName="com.laajue.snapping.MainActivity"
+            android:parentActivityName="com.laajue.snapping.ui.MainActivity"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.laajue.snapping.MainActivity" />
         </activity>
         <activity
-            android:name="com.laajue.snapping.ViewImageActivity"
+            android:name="com.laajue.snapping.ui.ViewImageActivity"
             android:label="@string/title_activity_view_image"
-            android:parentActivityName="com.laajue.snapping.MainActivity"
+            android:parentActivityName="com.laajue.snapping.ui.MainActivity"
             android:screenOrientation="portrait"  >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

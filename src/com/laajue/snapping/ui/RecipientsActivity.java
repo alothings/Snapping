@@ -1,4 +1,4 @@
-package com.laajue.snapping;
+package com.laajue.snapping.ui;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +17,13 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.laajue.snapping.R;
+import com.laajue.snapping.R.id;
+import com.laajue.snapping.R.layout;
+import com.laajue.snapping.R.menu;
+import com.laajue.snapping.R.string;
+import com.laajue.snapping.utils.FileHelper;
+import com.laajue.snapping.utils.ParseConstants;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseFile;

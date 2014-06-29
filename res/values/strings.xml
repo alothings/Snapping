@@ -50,5 +50,6 @@
     <string name="content_desc_background">Background</string>
     <string name="cancel_button_label">CANCEL</string>
     <string name="content_desc_button_divider">Button divider</string>
+    <string name="content_desc_message_icon">Message icon</string>
 
 </resources>

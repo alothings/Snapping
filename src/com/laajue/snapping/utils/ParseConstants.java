@@ -1,4 +1,4 @@
-package com.laajue.snapping;
+package com.laajue.snapping.utils;
 
 public final class ParseConstants {
 
